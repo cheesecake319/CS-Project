@@ -1,12 +1,13 @@
 
 public class RectangularPrism extends Shape{
+	//length and width are the length and width of the base
 	private double width, length, height; 
 	@Override
 	public double getVolume() {
 		// TODO Auto-generated method stub
-		return 0;
+		return width * length * height;
 	}
-	 public RectangularPrism(double BaseWidth, double BaseLength, double height) {
+	 public RectangularPrism(double width, double length, double height) {
 	        this.width = width;
 	        this.length = length;
 	        this.height = height;
@@ -14,7 +15,7 @@ public class RectangularPrism extends Shape{
 	@Override
 	public double getSurfaceArea() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 2*((width*length)+(height*length)+(height*width));
 	}
 
 }
