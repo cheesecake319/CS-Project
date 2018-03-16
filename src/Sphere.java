@@ -1,16 +1,27 @@
-//incomplete 
 public class Sphere extends Shape{
-	private double radius, circumference; 
-	@Override
-	public double getVolume() {
-		// TODO Auto-generated method stub
-		return 0;
+	public Shapes(String name) {
+		this.name = name;
+	}
+	
+	private double radius;
+	
+	public Sphere(String name, double radius) {
+		super(name);
+		this.radius = radius;
 	}
 
-	@Override
+	
 	public double getSurfaceArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 4*Math.PI*Math.pow(radius, 2);
 	}
 
+	
+	public double getVolume() {
+	
+		return 4/3*Math.PI*Math.pow(radius, 3);
+	}
+	public String getName() {
+		return name;
+	}
+	
 }
