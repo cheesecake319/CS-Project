@@ -1,4 +1,4 @@
 # CS-Project
 I want to die
 
-ok so this is the project umm please finish coding i am project manager not coder thx
+So this is the project I did a little bit of coding but the coding got pretty much rewritten by others so all that survives is Shape.java
