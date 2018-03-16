@@ -1,0 +1,26 @@
+public class TriangularPrism extends Shape{
+	
+	private double a;
+	private double b;
+	private double c;
+	private double height;
+	
+	public TriangularPrism(double a, double b, double c, double h) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		height = h;
+	}
+	
+	public double getSurfaceArea() {
+		double s = (a + b + c) / 2.0;
+		return Math.sqrt(s * (s - a) * (s - b) * (s - c)) * 2
+				+ (a * height) + (b * height) + (c * height);
+	}
+	
+	public double getVolume() {
+		double s = (a + b + c) / 2.0;
+		return Math.sqrt(s * (s - a) * (s - b) * (s - c)) * height;
+	}
+	
+}
